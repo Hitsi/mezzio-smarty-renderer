@@ -1,0 +1,48 @@
+{
+    "name": "hitsi/mezzio-smarty-renderer",
+    "description": "Smarty integration for Mezzio",
+    "keywords": [
+        "laminas",
+        "mezzio",
+        "http",
+        "middleware",
+        "psr",
+        "psr-7",
+        "smarty"
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "^7.4 || ~8.0.0",
+        "laminas/laminas-zendframework-bridge": "^1.0",
+        "mezzio/mezzio-helpers": "^5.0",
+        "mezzio/mezzio-router": "^3.0",
+        "mezzio/mezzio-template": "^2.0",
+        "psr/container": "^1.0",
+        "smarty/smarty": "^3.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hitsi\\Mezzio\\SmartyRenderer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HitsiTest\\Mezzio\\SmartyRenderer\\": "test/"
+        }
+    },
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@test"
+        ],
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+    }
+}
