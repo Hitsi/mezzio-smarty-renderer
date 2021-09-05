@@ -3,6 +3,7 @@
 namespace Hitsi\Mezzio\SmartyRenderer\Plugins\Path;
 
 use Hitsi\Mezzio\SmartyRenderer\Plugins\PluginsInterface;
+
 use Mezzio\Helper\ServerUrlHelper;
 use Mezzio\Router\RouterInterface;
 

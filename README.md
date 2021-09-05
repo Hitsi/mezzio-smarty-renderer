@@ -22,7 +22,7 @@ can recommend the following implementations:
 
 ## Configuration
 
-You need to include the [`Hitsi\Mezzio\SmartyRenderer\ConfigProvider`](src/ConfigProvider.php) in your
+You need to include the `Hitsi\Mezzio\SmartyRenderer\ConfigProvider` in your
 [`config/config.php`](https://github.com/mezzio/mezzio-skeleton/blob/master/config/config.php).
 Optional configuration can be stored in `config/autoload/templates.global.php`.
 
@@ -98,7 +98,7 @@ The included Smarty plugin adds support for url generation.
   
 ## Configuration Plugin
 
-You need to include the [`Hitsi\Mezzio\SmartyRenderer\Plugins\ConfigProvider`](src/ConfigProvider.php) in your
+You need to include the `Hitsi\Mezzio\SmartyRenderer\Plugins\ConfigProvider` in your
 [`config/config.php`](https://github.com/mezzio/mezzio-skeleton/blob/master/config/config.php).
 Optional you can add you own plugin like this.
 
