@@ -65,6 +65,12 @@ class SmartyFactory
             : [];
         $this->injectPlugins($smarty, $container, $plugins);
 
+        //add global params
+        $params = isset($config['global']) && is_array($config['global'])
+            ? $config['global']
+            : [];
+        $smarty->assign($params);
+
         return $smarty;
     }
 
