@@ -52,7 +52,40 @@ Optional configuration can be stored in `config/autoload/templates.global.php`.
     'debugging' => false, // https://www.smarty.net/docs/en/variable.debugging.tpl
 ],
 ```
+## Paths
+You can use multiple paths (namespaces) for templates
+```php
+'templates' => [
+    'extension' => 'file extension used by templates; defaults to tpl',
+    'paths' => [
+        'app' => __DIR__.'/../templates/app',
+        'admin' => __DIR__.'/../templates/admin',
+        'layout' => __DIR__.'/../templates/layout',
+        ...
+    ],
+],
+'smarty' => [
+    'template_dir' => __DIR__.'/../templates',
+    ...
+]
+```
 
+And render them
+```php
+$this->template->render('app::index', $params);
+```
+OR
+```php
+$this->template->render('app/index.tpl', $params);
+```
+In template
+```smarty
+{extend file='layout:main.tpl'}
+```
+OR short description
+```smarty
+{extend 'layout:main.tpl'}
+```
 
 ## Smarty Plugin
 
