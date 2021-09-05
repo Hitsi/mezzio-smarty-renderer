@@ -1,6 +1,7 @@
 {
     "name": "hitsi/mezzio-smarty-renderer",
     "description": "Smarty integration for Mezzio",
+    "license": "BSD-3-Clause",
     "keywords": [
         "laminas",
         "mezzio",
